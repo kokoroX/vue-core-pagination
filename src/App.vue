@@ -1,24 +1,10 @@
 <template>
-  <div id="app">
-    <pager :now-page="nowPage" :page-count="20" :padding="3"></pager>
-  </div>
+  <h1>vue-core-pagination</h1>
+  <p>Universal pagination component for Vue.js</p>
 </template>
 
 <script>
-import Pager from './components/Pager'
-export default {
-  components: {
-    Pager
-  },
-  data () {
-    return {
-      nowPage: 1
-    }
-  },
-  events: {
-    'page-jump' (val) {
-      this.nowPage = val
-    }
-  }
-}
+  export default {
+    name: 'app'
+  };
 </script>
